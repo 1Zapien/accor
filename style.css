@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+
+
+    /*typography vars*/
+    --text-color:hsl(238, 29%, 16%);
+    --text-secondaryColor:hsl(14, 88%, 65%);
+    --font-size:14px;
+    --font-light: 400;
+    --font-heavy: 700;
+
+
+    /*UI  colors*/
+    --divider:hsl(240, 5%, 91%);
+
+}
+
+
+body{
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: var(--font-light);
+    font-size: var(--font-size);
+    padding-bottom: 1rem;
+    overflow: scroll;
+}
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top:4rem;
+}
+
+.card{
+    width: 80%;
+    height: fit-content;
+    background: white;
+    border-radius: 25px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/*card header and questions */
+
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+
+.lady-img{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding-left: -2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.faqs{
+    flex: 1;
+    margin: 1rem;
+}
+
+
+
+
+.center-images{
+    position: relative;
+    object-fit: contain;
+}
+
+.imageA{
+    position: relative;
+    top:-75px;
+    left:-10px;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.imageB{
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    z-index: 20;
+    width: 100%;
+}
+
+
+
+
+
+
+/* Question section styling*/
+details{
+    padding: .5rem 0 .5rem 0;
+    border-bottom: 1px solid var(--divider);
+    margin-left: 0px;
+    font-weight: var(--font-light);
+    line-height: 1.5;
+
+}
+
+summary{
+    padding-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+
+details > summary{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+
+details[open] summary{
+    font-weight: var(--font-heavy);
+}
+details[open] summary svg{
+    transform: rotate(180deg)
+}
+
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+summary img{
+    align-self: center;
+}
+
+
+
+
+
+@media screen and (min-width: 850px) {
+    .card{
+        flex-direction: row; 
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+       
+    }
+
+    .lady-img{
+        height: 100%;
+        background: url("images/bg-pattern-desktop.svg") no-repeat;
+        background-position: -47em -21em;
+    }
+    
+    .center-images{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .center-images .imageA{
+        overflow: hidden;
+    }
+
+    .hide{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .imageA{
+        content: url("/images/illustration-woman-online-desktop.svg");
+        margin-top: 12rem;
+        margin-left: -15%;
+    }
+
+    .imageB{
+        content: url("/images/illustration-box-desktop.svg");
+        margin-left: -5rem;
+        margin-top: 12rem;
+        width:40%;
+    }
+    
+    
+    .faqs{
+        width:100%;
+    }
+
+    h1{
+        text-align: left;
+        margin: 0;
+    }
+
+    
+  }
