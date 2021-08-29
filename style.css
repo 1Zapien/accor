@@ -122,9 +122,9 @@ details{
 
 summary{
     padding-bottom: 1rem;
-    display: flex;
+    display: block;
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 details > summary{
@@ -133,7 +133,8 @@ details > summary{
 }
 
 .arrow{
-    display: inline-block;
+    vertical-align: middle;
+    float: right;
 }
 
 
@@ -150,11 +151,6 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
-
-
-summary img{
-    align-self: center;
-}
 
 
 
