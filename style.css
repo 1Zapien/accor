@@ -172,7 +172,7 @@ summary img{
 
     .lady-img{
         height: 100%;
-        background: url("images/bg-pattern-desktop.svg") no-repeat;
+        background: url("./images/bg-pattern-desktop.svg") no-repeat;
         background-position: -47em -21em;
     }
     
@@ -195,13 +195,13 @@ summary img{
     }
 
     .imageA{
-        content: url("/images/illustration-woman-online-desktop.svg");
+        content: url("./images/illustration-woman-online-desktop.svg");
         margin-top: 240px;
         margin-left: -60px;
     }
 
     .imageB{
-        content: url("/images/illustration-box-desktop.svg");
+        content: url("./images/illustration-box-desktop.svg");
         margin-left: -90px;
         margin-top: 240px;
         width:40%;
