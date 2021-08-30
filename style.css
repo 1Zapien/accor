@@ -22,6 +22,7 @@ body{
     min-height: 100vh;
     margin: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    color: var(--text-color);
     font-weight: var(--font-light);
     font-size: var(--font-size);
     padding-bottom: 1rem;
@@ -65,7 +66,7 @@ min-height: 100vh;
 
 h1{
     text-align: center;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .lady-img{
@@ -175,7 +176,7 @@ summary img{
         width: 1000px;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        min-height: fit-content;
        
     }
 
@@ -224,7 +225,7 @@ summary img{
 
     h1{
         text-align: left;
-        margin: 0;
+        margin-bottom: 2rem;
     }
 
     
