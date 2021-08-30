@@ -208,6 +208,7 @@ summary img{
     }
 
     .imageA{
+        display: block;
         content: url("./images/illustration-woman-online-desktop.svg");
         margin-top: 155px;
         margin-left: -60px;
