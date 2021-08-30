@@ -35,9 +35,17 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: fit-content;
-    padding-top:4rem;
+    min-height: 100vh;
+
+
 }
+/*
+min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;*/
+
 
 .card{
     width: 80%;
@@ -47,6 +55,7 @@ body{
     display: flex;
     flex-direction: column;
     min-width: 250px;
+    top: 250px;
 }
 
 
@@ -77,7 +86,7 @@ h1{
 
 .faqs{
     flex: 1;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 
@@ -93,7 +102,6 @@ h1{
     top:-110px;
     left:-10px;
     z-index: 1;
-    width: 100%;
 
 }
 
@@ -117,31 +125,30 @@ details{
     margin-left: 0px;
     font-weight: var(--font-light);
     line-height: 1.5;
+    display: block;
 
 }
 
 summary{
     padding-bottom: 1rem;
-    display: block;
     width: 100%;
-    justify-content: space-between;
 }
 
 details > summary{
     list-style: none;
-    margin-top: 1rem;
 }
 
 .arrow{
-    vertical-align: middle;
+    display: block;
     float: right;
+    
 }
 
 
 details[open] summary{
     font-weight: var(--font-heavy);
 }
-details[open] summary .arrow img{
+details[open] summary .arrow{
     transform: rotate(180deg);
 }
 
@@ -153,23 +160,30 @@ details > summary::-webkit-details-marker {
 
 
 
+summary img{
+    vertical-align: middle;
+    float: right;
+}
 
 
 
-@media screen and (min-width: 850px) {
+
+
+@media screen and (min-width: 900px) {
     .card{
         flex-direction: row; 
-        width: 800px;
+        width: 1000px;
         justify-content: center;
         align-items: center;
-        height: 70%;
+        height: 70vh;
        
     }
 
     .lady-img{
         height: 100%;
         background: url("./images/bg-pattern-desktop.svg") no-repeat;
-        background-position: -47em -21em;
+        background-position: -40em -23em;
+        justify-content: left;
     }
     
     .center-images{
@@ -192,14 +206,14 @@ details > summary::-webkit-details-marker {
 
     .imageA{
         content: url("./images/illustration-woman-online-desktop.svg");
-        margin-top: 240px;
+        margin-top: 155px;
         margin-left: -60px;
     }
 
     .imageB{
         content: url("./images/illustration-box-desktop.svg");
-        margin-left: -90px;
-        margin-top: 240px;
+        margin-left: -95px;
+        margin-top: 200px;
         width:40%;
     }
     
