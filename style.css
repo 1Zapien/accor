@@ -125,12 +125,6 @@ h1{
 .questions {
     max-height: 300px;
     overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-}
-
-.questions::-webkit-scrollbar {
-    display: none;
 }
 
 details{
