@@ -26,7 +26,7 @@ body{
     font-weight: var(--font-light);
     font-size: var(--font-size);
     padding-bottom: 1rem;
-    overflow: scroll;
+    padding-top: 5rem;
 }
 
 
@@ -120,6 +120,19 @@ h1{
 
 
 /* Question section styling*/
+
+
+.questions {
+    max-height: 300px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.questions::-webkit-scrollbar {
+    display: none;
+}
+
 details{
     padding: .5rem 0 .5rem 0;
     border-bottom: 1px solid var(--divider);
@@ -127,6 +140,7 @@ details{
     font-weight: var(--font-light);
     line-height: 1.5;
     display: block;
+    cursor: pointer;
 
 }
 
@@ -170,10 +184,13 @@ summary img{
 
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
+    body{
+        padding: 0rem 2rem 1rem 2rem;
+    }
     .card{
         flex-direction: row; 
-        width: 1000px;
+        width: 900px;
         justify-content: center;
         align-items: center;
         min-height: fit-content;
@@ -184,7 +201,7 @@ summary img{
         height: 100%;
         width: 100%;
         background: url("./images/bg-pattern-desktop.svg") no-repeat;
-        background-position: -40em -23em;
+        background-position: -43em -21em;
         justify-content: left;
     }
     
@@ -210,16 +227,16 @@ summary img{
     .imageA{
         display: block;
         content: url("./images/illustration-woman-online-desktop.svg");
-        margin-top: 155px;
+        margin-top: 190px;
         margin-left: -60px;
         width: 100%;
     }
 
     .imageB{
         content: url("./images/illustration-box-desktop.svg");
-        margin-left: -105px;
-        margin-top: 190px;
-        width:40%;
+        margin-left: -107px;
+        margin-top: 192px;
+        width:45%;
     }
     
     
